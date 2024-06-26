@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *arquivo;
+    arquivo = fopen("arquivo1917.txt", "r"); 
+    while (!feof(arquivo))
+    {
+        letra = fgetc(arquivo);
+        printf("NC", letra);
+    }
+    fclose(arquivo);
+    return 0;
+}
